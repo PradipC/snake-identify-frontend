@@ -1,8 +1,10 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders snake identifier upload screen', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/Snake Identifier/i)).toBeInTheDocument();
+  expect(screen.getByText(/PHOTOGRAPH THE SNAKE/i)).toBeInTheDocument();
+  expect(screen.getByText(/Open Camera/i)).toBeInTheDocument();
+  expect(screen.getByText(/Upload Gallery/i)).toBeInTheDocument();
 });
