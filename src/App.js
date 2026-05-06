@@ -98,7 +98,7 @@ export default function App() {
     const formData = new FormData();
     formData.append('image', imageFile);
     try {
-      const res = await fetch('http://localhost:8080/api/snake/identify', {
+      const res = await fetch('https://snake-identify-backend.onrender.com/api/snake/identify', {
         method: 'POST',
         body: formData,
       });
